@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html class="html" lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	
+
+	<title>8 – Alphabazar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="dns-prefetch" href="//s.w.org">
+
+
+
+<link rel="stylesheet" id="wp-block-library-css" href="https://shaswat22.github.io/alphabazar/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="https://shaswat22.github.io/alphabazar/wp-includes/css/dist/block-library/theme.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wc-block-style-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="eh-style-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/payment-gateway-stripe-and-woocommerce-integration/assets/css/eh-style.css" type="text/css" media="all">
+<link rel="stylesheet" id="sticky-header-oceanwp-style-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/sticky-header-oceanwp//style.css" type="text/css" media="all">
+<style id="woocommerce-inline-inline-css" type="text/css">
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel="stylesheet" id="wc-gateway-ppec-frontend-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/woocommerce-gateway-paypal-express-checkout/assets/css/wc-gateway-ppec-frontend.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/fonts/fontawesome/css/all.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="simple-line-icons-css" href="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/css/third/simple-line-icons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="magnific-popup-css" href="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/css/third/magnific-popup.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="slick-css" href="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/css/third/slick.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-style-css" href="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/css/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-woo-mini-cart-css" href="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/css/woo/woo-mini-cart.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-woocommerce-css" href="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/css/woo/woocommerce.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-woo-star-font-css" href="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/css/woo/woo-star-font.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oceanwp-woo-quick-view-css" href="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/css/woo/woo-quick-view.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-framework-css-frontend-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/elementskit-lite/libs/framework/assets/css/frontend-style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="woo-variation-swatches-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/woo-variation-swatches/assets/css/frontend.min.css" type="text/css" media="all">
+<style id="woo-variation-swatches-inline-css" type="text/css">
+.variable-item:not(.radio-variable-item) { width : 30px; height : 30px; } .wvs-style-squared .button-variable-item { min-width : 30px; } .button-variable-item span { font-size : 16px; }
+</style>
+<link rel="stylesheet" id="woo-variation-swatches-theme-override-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/woo-variation-swatches/assets/css/wvs-theme-override.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="woo-variation-swatches-tooltip-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/woo-variation-swatches/assets/css/frontend-tooltip.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-vendors-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/elementskit-lite/widgets/init/assets/css/vendors.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-style-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/elementskit-lite/widgets/init/assets/css/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="elementskit-responsive-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css" type="text/css" media="all">
+<link rel="stylesheet" id="oe-widgets-style-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/ocean-extra/assets/css/widgets.css" type="text/css" media="all">
+<link rel="stylesheet" id="ops-product-share-style-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/ocean-product-sharing/assets/css/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="oss-social-share-style-css" href="https://shaswat22.github.io/alphabazar/wp-content/plugins/ocean-social-sharing/assets/css/style.min.css" type="text/css" media="all">
+<script type="text/template" id="tmpl-variation-template">
+	<div class="woocommerce-variation-description">{{{ data.variation.variation_description }}}
+	<div class="woocommerce-variation-price">{{{ data.variation.price_html }}}
+	<div class="woocommerce-variation-availability">{{{ data.variation.availability_html }}}
+</script>
+<script type="text/template" id="tmpl-unavailable-variation-template">
+	<p>Sorry, this product is unavailable. Please choose a different combination.
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/jquery/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/sticky-header-oceanwp//main.js"></script>
+
+
+
+
+        <script type="text/javascript">
+            (function () {
+                window.lae_fs = {can_use_premium_code: false};
+            })();
+        </script>
+        <script>var sticky_header_style = "";</script>	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css">
+/* Header CSS */#site-header.has-header-media .overlay-header-media{background-color:rgba(0,0,0,0.5)}/* WooCommerce CSS */#owp-checkout-timeline .timeline-step{color:#cccccc}#owp-checkout-timeline .timeline-step{border-color:#cccccc}
+</style></head>
+
+<body class="archive tax-pa_size term-20 wp-embed-responsive theme-oceanwp woocommerce woocommerce-page woocommerce-no-js woo-variation-swatches wvs-theme-oceanwp wvs-theme-child-oceanwp wvs-style-squared wvs-attr-behavior-blur oceanwp-theme sidebar-mobile default-breakpoint has-sidebar content-left-sidebar has-topbar has-breadcrumbs has-grid-list account-original-style elementor-default" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+	
+	
+	<div id="outer-wrap" class="site clr">
+
+		<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+		
+		<div id="wrap" class="clr">
+
+			
+
+<div id="top-bar-wrap" class="clr">
+
+	<div id="top-bar" class="clr container has-no-content">
+
+		
+		<div id="top-bar-inner" class="clr">
+
+			
+
+		</div>
+
+		
+	</div>
+
+</div>
+
+
+			
+<header id="site-header" class="minimal-header clr" data-height="74" itemscope="itemscope" itemtype="https://schema.org/WPHeader" role="banner">
+
+	
+		
+			
+			<div id="site-header-inner" class="clr container">
+
+				
+				
+
+<div id="site-logo" class="clr" itemscope itemtype="https://schema.org/Brand">
+
+	
+	<div id="site-logo-inner" class="clr">
+
+						<a href="https://shaswat22.github.io/alphabazar/" rel="home" class="site-title site-logo-text">Alphabazar</a>
+				
+	</div>
+
+	
+	
+</div>
+
+
+				
+			</div>
+
+			
+			
+		
+				
+	
+</header>
+
+
+			
+			<main id="main" class="site-main clr" role="main">
+
+				
+
+<header class="page-header">
+
+	
+	<div class="container clr page-header-inner">
+
+		
+			<h1 class="page-header-title clr" itemprop="headline">8</h1>
+
+			
+		
+		<nav aria-label="Breadcrumbs" class="site-breadcrumbs clr" itemprop="breadcrumb"><ol class="trail-items" itemscope itemtype="http://schema.org/BreadcrumbList"><meta name="numberOfItems" content="3"><meta name="itemListOrder" content="Ascending"><li class="trail-item trail-begin" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="https://shaswat22.github.io/alphabazar" rel="home" aria-label="Home" itemtype="https://schema.org/Thing" itemprop="item"><span itemprop="name"><span class="icon-home"></span><span class="breadcrumb-home has-icon">Home</span></span></a><span class="breadcrumb-sep">></span><meta content="1" itemprop="position"></li><li class="trail-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="https://shaswat22.github.io/alphabazar/shop/" itemtype="https://schema.org/Thing" itemprop="item"><span itemprop="name">Products</span></a><span class="breadcrumb-sep">></span><meta content="2" itemprop="position"></li><li class="trail-item trail-end" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="https://shaswat22.github.io/alphabazar/size/8/" itemtype="https://schema.org/Thing" itemprop="item"><span itemprop="name">8</span></a><meta content="3" itemprop="position"></li></ol></nav>
+	</div>
+
+	
+	
+</header>
+
+
+
+<div id="content-wrap" class="container clr">
+
+	
+	<div id="primary" class="content-area clr">
+
+		
+		<div id="content" class="clr site-content">
+
+			
+			<article class="entry-content entry clr"><header class="woocommerce-products-header">
+	
+	</header>
+<div class="woocommerce-notices-wrapper"></div><div class="oceanwp-toolbar clr"><nav class="oceanwp-grid-list"><a href="#" id="oceanwp-grid" title="Grid view" class="active grid-btn"><span class="icon-grid"></span></a><a href="#" id="oceanwp-list" title="List view" class="list-btn"><span class="icon-list"></span></a></nav><form class="woocommerce-ordering" method="get">
+	<select name="orderby" class="orderby" aria-label="Shop order">
+					<option value="menu_order" selected>Default sorting</option>
+					<option value="popularity">Sort by popularity</option>
+					<option value="rating">Sort by average rating</option>
+					<option value="date">Sort by latest</option>
+					<option value="price">Sort by price: low to high</option>
+					<option value="price-desc">Sort by price: high to low</option>
+			</select>
+	<input type="hidden" name="paged" value="1">
+	</form>
+
+<ul class="result-count">
+    <li class="view-title">View:</li>
+    <li><a class="view-first active" href="https://shaswat22.github.io/alphabazar/size/8/">12</a></li>
+    <li><a class="view-second" href="https://shaswat22.github.io/alphabazar/size/8/">24</a></li>
+    <li><a class="view-all" href="https://shaswat22.github.io/alphabazar/size/8/">All</a></li>
+</ul>
+</div>
+<ul class="products oceanwp-row clr grid"><li class="entry has-media has-product-nav col span_1_of_3 owp-content-center owp-thumbs-layout-horizontal owp-btn-normal owp-tabs-layout-horizontal product type-product post-14 status-publish first instock product_cat-footwear product_cat-men has-post-thumbnail sale taxable shipping-taxable purchasable product-type-variable">
+	<div class="product-inner clr">
+	<div class="woo-entry-image-swap woo-entry-image clr">
+				<a href="https://shaswat22.github.io/alphabazar/product/mast-harbour/" class="woocommerce-LoopProduct-link">
+			<img width="300" height="300" src="https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/35ae39b8-a44e-4921-a4e2-3c11e896de601580213543127-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-2-300x300.jpg" class="woo-entry-image-main wp-post-image" alt="Mast & Harbour" itemprop="image" srcset="https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/35ae39b8-a44e-4921-a4e2-3c11e896de601580213543127-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-2-300x300.jpg 300w,https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/35ae39b8-a44e-4921-a4e2-3c11e896de601580213543127-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-2-150x150.jpg 150w,https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/35ae39b8-a44e-4921-a4e2-3c11e896de601580213543127-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-2-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px">			<img width="300" height="300" src="https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/0df98892-2485-4198-ae3f-8521e9d9307f1580213543195-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-1-300x300.jpg" class="woo-entry-image-secondary wp-post-image" alt="Mast & Harbour" itemprop="image" srcset="https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/0df98892-2485-4198-ae3f-8521e9d9307f1580213543195-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-1-300x300.jpg 300w,https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/0df98892-2485-4198-ae3f-8521e9d9307f1580213543195-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-1-150x150.jpg 150w,https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/0df98892-2485-4198-ae3f-8521e9d9307f1580213543195-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-1-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px">		</a>
+		<a href="#" id="product_id_14" class="owp-quick-view" data-product_id="14"><i class="icon-eye" aria-hidden="true"></i>Quick View</a>	</div>
+
+<ul class="woo-entry-inner clr"><li class="image-wrap">
+	<span class="onsale">Sale!</span>
+	
+	<div class="woo-entry-image-swap woo-entry-image clr">
+				<a href="https://shaswat22.github.io/alphabazar/product/mast-harbour/" class="woocommerce-LoopProduct-link">
+			<img width="300" height="300" src="https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/35ae39b8-a44e-4921-a4e2-3c11e896de601580213543127-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-2-300x300.jpg" class="woo-entry-image-main wp-post-image" alt="Mast & Harbour" itemprop="image" srcset="https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/35ae39b8-a44e-4921-a4e2-3c11e896de601580213543127-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-2-300x300.jpg 300w,https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/35ae39b8-a44e-4921-a4e2-3c11e896de601580213543127-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-2-150x150.jpg 150w,https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/35ae39b8-a44e-4921-a4e2-3c11e896de601580213543127-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-2-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px">			<img width="300" height="300" src="https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/0df98892-2485-4198-ae3f-8521e9d9307f1580213543195-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-1-300x300.jpg" class="woo-entry-image-secondary wp-post-image" alt="Mast & Harbour" itemprop="image" srcset="https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/0df98892-2485-4198-ae3f-8521e9d9307f1580213543195-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-1-300x300.jpg 300w,https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/0df98892-2485-4198-ae3f-8521e9d9307f1580213543195-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-1-150x150.jpg 150w,https://shaswat22.github.io/alphabazar/wp-content/uploads/2020/06/0df98892-2485-4198-ae3f-8521e9d9307f1580213543195-Mast-Harbour-Men-Beige-Sneakers-7461580213540652-1-100x100.jpg 100w" sizes="(max-width: 300px) 100vw, 300px">		</a>
+		<a href="#" id="product_id_14" class="owp-quick-view" data-product_id="14"><i class="icon-eye" aria-hidden="true"></i>Quick View</a>	</div>
+
+</li><li class="category"><a href="https://shaswat22.github.io/alphabazar/product-category/men/footwear/" rel="tag">Footwear</a>, <a href="https://shaswat22.github.io/alphabazar/product-category/men/" rel="tag">Men</a></li><li class="title"><a href="https://shaswat22.github.io/alphabazar/product/mast-harbour/">Mast & Harbour</a></li><li class="inner">
+	<span class="price"><span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₹</span>874.00</span> – <span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">₹</span>930.00</span></span>
+</li><li class="woo-desc">Men Beige Sneakers</li><li class="btn-wrap clr"><a href="https://shaswat22.github.io/alphabazar/product/mast-harbour/" data-quantity="1" class="button product_type_variable add_to_cart_button" data-product_id="14" data-product_sku="" aria-label="Select options for “Mast & Harbour”" rel="nofollow">Select options</a></li></ul></div></li>
+</ul>
+
+			</article>
+
+			
+		</div>
+
+		
+	</div>
+
+	
+
+<aside id="right-sidebar" class="sidebar-container widget-area sidebar-primary" itemscope="itemscope" itemtype="https://schema.org/WPSideBar" role="complementary" aria-label="Primary Sidebar">
+
+	
+	<div id="right-sidebar-inner" class="clr">
+
+		<div id="search-2" class="sidebar-box widget_search clr">
+<form role="search" method="get" class="searchform" action="https://shaswat22.github.io/alphabazar/">
+	<label for="ocean-search-form-1">
+		<span class="screen-reader-text">Search for:</span>
+		<input type="search" id="ocean-search-form-1" class="field" autocomplete="off" placeholder="Search" name="s">
+			</label>
+	</form></div>		<div id="recent-posts-2" class="sidebar-box widget_recent_entries clr">		<h4 class="widget-title">Recent Posts</h4>		<ul>
+											<li>
+					<a href="https://shaswat22.github.io/alphabazar/hello-world/">Hello world!</a>
+									</li>
+					</ul>
+		</div><div id="recent-comments-2" class="sidebar-box widget_recent_comments clr"><h4 class="widget-title">Recent Comments</h4><ul id="recentcomments"><li class="recentcomments"><span class="comment-author-link"><a href="https://wordpress.org/" rel="external nofollow ugc" class="url">A WordPress Commenter</a></span> on <a href="https://shaswat22.github.io/alphabazar/hello-world/#comment-1">Hello world!</a></li></ul></div>
+	</div>
+
+	
+</aside>
+
+
+</div>
+
+
+        </main>
+
+        
+        
+        
+            
+<footer id="footer" class="site-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo">
+
+    
+    <div id="footer-inner" class="clr">
+
+        
+
+<div id="footer-widgets" class="oceanwp-row clr">
+
+	
+	<div class="footer-widgets-inner container">
+
+        			<div class="footer-box span_1_of_4 col col-1">
+							</div>
+
+							<div class="footer-box span_1_of_4 col col-2">
+									</div>
+						
+							<div class="footer-box span_1_of_4 col col-3 ">
+									</div>
+			
+							<div class="footer-box span_1_of_4 col col-4">
+									</div>
+			
+		
+	</div>
+
+	
+</div>
+
+
+
+<div id="footer-bottom" class="clr no-footer-nav">
+
+	
+	<div id="footer-bottom-inner" class="container clr">
+
+		
+		
+			<div id="copyright" class="clr" role="contentinfo">
+				Copyright - OceanWP Theme by Nick			</div>
+
+		
+	</div>
+
+	
+</div>
+
+
+    </div>
+
+    
+</footer>
+        
+        
+    </div>
+
+    
+</div>
+
+
+
+<a id="scroll-top" class="scroll-top-right" href="#"><span class="fa fa-angle-up" aria-label="Scroll to the top of the page"></span></a>
+
+
+<div id="sidr-close">
+	<a href="#" class="toggle-sidr-close" aria-label="Close mobile Menu">
+		<i class="icon icon-close" aria-hidden="true"></i><span class="close-text">Close Menu</span>
+	</a>
+</div>
+    
+    
+<div id="mobile-menu-search" class="clr">
+	<form method="get" action="https://shaswat22.github.io/alphabazar/" class="mobile-searchform" role="search" aria-label="Search for:">
+		<label for="ocean-mobile-search2">
+			<input type="search" name="s" autocomplete="off" placeholder="Search">
+			<button type="submit" class="searchform-submit" aria-label="Submit Search">
+				<i class="icon icon-magnifier" aria-hidden="true"></i>
+			</button>
+					</label>
+			</form>
+</div>
+
+
+<div id="owp-qv-wrap">
+	<div class="owp-qv-container">
+		<div class="owp-qv-content-wrap">
+			<div class="owp-qv-content-inner">
+				<a href="#" class="owp-qv-close" aria-label="Close quick preview">×</a>
+				<div id="owp-qv-content" class="woocommerce single-product"></div>
+			</div>
+		</div>
+	</div>
+	<div class="owp-qv-overlay"></div>
+</div><div id="oceanwp-cart-sidebar-wrap"><div class="oceanwp-cart-sidebar"><a href="#" class="oceanwp-cart-close">×</a><p class="owp-cart-title">Cart</p><div class="divider"></div><div class="owp-mini-cart"><div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content"></div></div></div></div><div class="oceanwp-cart-sidebar-overlay"></div></div>	<script type="text/javascript">
+		var c = document.body.className;
+		c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+		document.body.className = c;
+	</script>
+	<link rel="stylesheet" id="buttons-css" href="https://shaswat22.github.io/alphabazar/wp-includes/css/buttons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="dashicons-css" href="https://shaswat22.github.io/alphabazar/wp-includes/css/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="mediaelement-css" href="https://shaswat22.github.io/alphabazar/wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-mediaelement-css" href="https://shaswat22.github.io/alphabazar/wp-includes/js/mediaelement/wp-mediaelement.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="media-views-css" href="https://shaswat22.github.io/alphabazar/wp-includes/css/media-views.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="imgareaselect-css" href="https://shaswat22.github.io/alphabazar/wp-includes/js/imgareaselect/imgareaselect.css" type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var ekit_site_url = {"siteurl":"https:\/\/PLACEHOLDER.wpsho"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/elementskit-lite/widgets/mail-chimp/assets/js/mail-chimp.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/alphabazar\/alphabazar\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/alphabazar\/alphabazar\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/shaswat22.github.io\/alphabazar\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/alphabazar\/alphabazar\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/alphabazar\/alphabazar\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/alphabazar\/alphabazar\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/alphabazar\/alphabazar\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_2c4240d485f9158a78fc92888228cd3b","fragment_name":"wc_fragments_2c4240d485f9158a78fc92888228cd3b","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/imagesloaded.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/js/third/woo/woo-scripts.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/js/third/magnific-popup.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var oceanwpLocalize = {"isRTL":"","menuSearchStyle":"drop_down","sidrSource":"#sidr-close, #site-navigation, #mobile-menu-search","sidrDisplace":"1","sidrSide":"left","sidrDropdownTarget":"link","verticalHeaderTarget":"link","customSelects":".woocommerce-ordering .orderby, #dropdown_product_cat, .widget_categories select, .widget_archive select, .single-product .variations_form .variations select","wooCartStyle":"drop_down","ajax_url":"https:\/\/shaswat22.github.io\/alphabazar\/wp-admin\/admin-ajax.php","cart_url":"https:\/\/shaswat22.github.io\/alphabazar\/cart\/","cart_redirect_after_add":"no","view_cart":"View cart","floating_bar":"on","grouped_text":"View products"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/js/main.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/js/third/woo/woo-quick-view.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/underscore.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpUtilSettings = {"ajax":{"url":"\/alphabazar\/alphabazar\/wp-admin\/admin-ajax.php"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/wp-util.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_add_to_cart_variation_params = {"wc_ajax_url":"\/alphabazar\/alphabazar\/?wc-ajax=%%endpoint%%","i18n_no_matching_variations_text":"Sorry, no products matched your selection. Please choose a different combination.","i18n_make_a_selection_text":"Please select some product options before adding this product to your cart.","i18n_unavailable_text":"Sorry, this product is unavailable. Please choose a different combination."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/themes/oceanwp/assets/js/third/woo/woo-mini-cart.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js"></script>
+<script type="text/javascript">
+
+        //console.log(window.elementskit);
+
+		var elementskit = {
+            resturl: 'https://shaswat22.github.io/alphabazar/wp-json/elementskit/v1/',
+        }
+
+        //console.log(window.elementskit);
+		
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/elementskit-lite/widgets/init/assets/js/nav-menu.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/elementskit-lite/widgets/init/assets/js/ui-slim.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var woo_variation_swatches_options = {"is_product_page":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/woo-variation-swatches/assets/js/frontend.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/ocean-product-sharing/assets/js/social.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/ocean-social-sharing/assets/js/social.min.js"></script>
+
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/shortcode.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var userSettings = {"url":"\/alphabazar\/alphabazar\/","uid":"0","time":"1592456029","secure":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/utils.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/backbone.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/wp-backbone.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpMediaModelsL10n = {"settings":{"ajaxurl":"\/alphabazar\/alphabazar\/wp-admin\/admin-ajax.php","post":{"id":0}}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/media-models.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/plupload/moxie.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/plupload/plupload.min.js"></script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+var pluploadL10n = {"queue_limit_exceeded":"You have attempted to queue too many files.","file_exceeds_size_limit":"%s exceeds the maximum upload size for this site.","zero_byte_file":"This file is empty. Please try another.","invalid_filetype":"Sorry, this file type is not permitted for security reasons.","not_an_image":"This file is not an image. Please try another.","image_memory_exceeded":"Memory exceeded. Please try another smaller file.","image_dimensions_exceeded":"This is larger than the maximum size. Please try another.","default_error":"An error occurred in the upload. Please try again later.","missing_upload_url":"There was a configuration error. Please contact the server administrator.","upload_limit_exceeded":"You may only upload 1 file.","http_error":"Unexpected response from the server. The file may have been uploaded successfully. Check in the Media Library or reload the page.","http_error_image":"Post-processing of the image failed likely because the server is busy or does not have enough resources. Uploading a smaller image may help. Suggested maximum size is 2500 pixels.","upload_failed":"Upload failed.","big_upload_failed":"Please try uploading this file with the %1$sbrowser uploader%2$s.","big_upload_queued":"%s exceeds the maximum upload size for the multi-file uploader when used in your browser.","io_error":"IO error.","security_error":"Security error.","file_cancelled":"File canceled.","upload_stopped":"Upload stopped.","dismiss":"Dismiss","crunching":"Crunching\u2026","deleted":"moved to the Trash.","error_uploading":"\u201c%s\u201d has failed to upload."};
+var _wpPluploadSettings = {"defaults":{"file_data_name":"async-upload","url":"\/alphabazar\/alphabazar\/wp-admin\/async-upload.php","filters":{"max_file_size":"41943040b","mime_types":[{"extensions":"jpg,jpeg,jpe,gif,png,bmp,tiff,tif,ico,asf,asx,wmv,wmx,wm,avi,divx,flv,mov,qt,mpeg,mpg,mpe,mp4,m4v,ogv,webm,mkv,3gp,3gpp,3g2,3gp2,txt,asc,c,cc,h,srt,csv,tsv,ics,rtx,css,vtt,dfxp,mp3,m4a,m4b,aac,ra,ram,wav,ogg,oga,flac,mid,midi,wma,wax,mka,rtf,pdf,class,tar,zip,gz,gzip,rar,7z,psd,xcf,doc,pot,pps,ppt,wri,xla,xls,xlt,xlw,mdb,mpp,docx,docm,dotx,dotm,xlsx,xlsm,xlsb,xltx,xltm,xlam,pptx,pptm,ppsx,ppsm,potx,potm,ppam,sldx,sldm,onetoc,onetoc2,onetmp,onepkg,oxps,xps,odt,odp,ods,odg,odc,odb,odf,wp,wpd,key,numbers,pages,svg,json"}]},"multipart_params":{"action":"upload-attachment","_wpnonce":"56103755d2"}},"browser":{"mobile":false,"supported":true},"limitExceeded":false};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/plupload/wp-plupload.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/jquery/ui/core.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/jquery/ui/widget.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/jquery/ui/mouse.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/jquery/ui/sortable.min.js"></script>
+<script type="text/javascript">
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/mediaelement/mediaelement-and-player.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/mediaelement/mediaelement-migrate.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/alphabazar\/alphabazar\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/mediaelement/wp-mediaelement.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wpApiSettings = {"root":"https:\/\/shaswat22.github.io\/alphabazar\/wp-json\/","nonce":"955893eb88","versionString":"wp\/v2\/"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/api-request.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/dist/vendor/wp-polyfill.min.js"></script>
+<script type="text/javascript">
+( 'fetch' in window ) || document.write( '<script src="https://shaswat22.github.io/alphabazar/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0">' + 'ipt>' );( document.contains ) || document.write( '<script src="https://shaswat22.github.io/alphabazar/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0">' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://shaswat22.github.io/alphabazar/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0">' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://shaswat22.github.io/alphabazar/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4">' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://shaswat22.github.io/alphabazar/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12">' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://shaswat22.github.io/alphabazar/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2">' + 'ipt>' );
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/dist/dom-ready.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/dist/a11y.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/dist/i18n.min.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _wpMediaViewsL10n = {"mediaFrameDefaultTitle":"Media","url":"URL","addMedia":"Add Media","search":"Search","select":"Select","cancel":"Cancel","update":"Update","replace":"Replace","remove":"Remove","back":"Back","selected":"%d selected","dragInfo":"Drag and drop to reorder media files.","uploadFilesTitle":"Upload Files","uploadImagesTitle":"Upload Images","mediaLibraryTitle":"Media Library","insertMediaTitle":"Add Media","createNewGallery":"Create a new gallery","createNewPlaylist":"Create a new playlist","createNewVideoPlaylist":"Create a new video playlist","returnToLibrary":"\u2190 Return to library","allMediaItems":"All media items","allDates":"All dates","noItemsFound":"No items found.","insertIntoPost":"Insert into post","unattached":"Unattached","mine":"Mine","trash":"Trash","uploadedToThisPost":"Uploaded to this post","warnDelete":"You are about to permanently delete this item from your site.\nThis action cannot be undone.\n 'Cancel' to stop, 'OK' to delete.","warnBulkDelete":"You are about to permanently delete these items from your site.\nThis action cannot be undone.\n 'Cancel' to stop, 'OK' to delete.","warnBulkTrash":"You are about to trash these items.\n  'Cancel' to stop, 'OK' to delete.","bulkSelect":"Bulk Select","trashSelected":"Move to Trash","restoreSelected":"Restore from Trash","deletePermanently":"Delete Permanently","apply":"Apply","filterByDate":"Filter by date","filterByType":"Filter by type","searchLabel":"Search","searchMediaLabel":"Search Media","searchMediaPlaceholder":"Search media items...","mediaFound":"Number of media items found: %d","mediaFoundHasMoreResults":"Number of media items displayed: %d. Scroll the page for more results.","noMedia":"No media items found.","noMediaTryNewSearch":"No media items found. Try a different search.","attachmentDetails":"Attachment Details","insertFromUrlTitle":"Insert from URL","setFeaturedImageTitle":"Featured image","setFeaturedImage":"Set featured image","createGalleryTitle":"Create Gallery","editGalleryTitle":"Edit Gallery","cancelGalleryTitle":"\u2190 Cancel Gallery","insertGallery":"Insert gallery","updateGallery":"Update gallery","addToGallery":"Add to gallery","addToGalleryTitle":"Add to Gallery","reverseOrder":"Reverse order","imageDetailsTitle":"Image Details","imageReplaceTitle":"Replace Image","imageDetailsCancel":"Cancel Edit","editImage":"Edit Image","chooseImage":"Choose Image","selectAndCrop":"Select and Crop","skipCropping":"Skip Cropping","cropImage":"Crop Image","cropYourImage":"Crop your image","cropping":"Cropping\u2026","suggestedDimensions":"Suggested image dimensions: %1$s by %2$s pixels.","cropError":"There has been an error cropping your image.","audioDetailsTitle":"Audio Details","audioReplaceTitle":"Replace Audio","audioAddSourceTitle":"Add Audio Source","audioDetailsCancel":"Cancel Edit","videoDetailsTitle":"Video Details","videoReplaceTitle":"Replace Video","videoAddSourceTitle":"Add Video Source","videoDetailsCancel":"Cancel Edit","videoSelectPosterImageTitle":"Select Poster Image","videoAddTrackTitle":"Add Subtitles","playlistDragInfo":"Drag and drop to reorder tracks.","createPlaylistTitle":"Create Audio Playlist","editPlaylistTitle":"Edit Audio Playlist","cancelPlaylistTitle":"\u2190 Cancel Audio Playlist","insertPlaylist":"Insert audio playlist","updatePlaylist":"Update audio playlist","addToPlaylist":"Add to audio playlist","addToPlaylistTitle":"Add to Audio Playlist","videoPlaylistDragInfo":"Drag and drop to reorder videos.","createVideoPlaylistTitle":"Create Video Playlist","editVideoPlaylistTitle":"Edit Video Playlist","cancelVideoPlaylistTitle":"\u2190 Cancel Video Playlist","insertVideoPlaylist":"Insert video playlist","updateVideoPlaylist":"Update video playlist","addToVideoPlaylist":"Add to video playlist","addToVideoPlaylistTitle":"Add to Video Playlist","filterAttachments":"Filter Media","attachmentsList":"Media list","iconPicker":{"frameTitle":"Icon Picker","allFilter":"All","selectIcon":"Select Icon"},"settings":{"tabs":[],"tabUrl":"https:\/\/shaswat22.github.io\/alphabazar\/wp-admin\/media-upload.php?chromeless=1","mimeTypes":{"image":"Images","audio":"Audio","video":"Video","application\/msword,application\/vnd.openxmlformats-officedocument.wordprocessingml.document,application\/vnd.ms-word.document.macroEnabled.12,application\/vnd.ms-word.template.macroEnabled.12,application\/vnd.oasis.opendocument.text,application\/vnd.apple.pages,application\/pdf,application\/vnd.ms-xpsdocument,application\/oxps,application\/rtf,application\/wordperfect,application\/octet-stream":"Documents","application\/vnd.apple.numbers,application\/vnd.oasis.opendocument.spreadsheet,application\/vnd.ms-excel,application\/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application\/vnd.ms-excel.sheet.macroEnabled.12,application\/vnd.ms-excel.sheet.binary.macroEnabled.12":"Spreadsheets","application\/x-gzip,application\/rar,application\/x-tar,application\/zip,application\/x-7z-compressed":"Archives"},"captions":true,"nonce":{"sendToEditor":"4c16383c01"},"post":{"id":0},"defaultProps":{"link":"none","align":"","size":""},"attachmentCounts":{"audio":1,"video":1},"oEmbedProxyUrl":"https:\/\/shaswat22.github.io\/alphabazar\/wp-json\/oembed\/1.0\/proxy","embedExts":["mp3","ogg","flac","m4a","wav","mp4","m4v","webm","ogv","flv"],"embedMimes":{"mp3":"audio\/mpeg","ogg":"audio\/ogg","flac":"audio\/flac","m4a":"audio\/mpeg","wav":"audio\/wav","mp4":"video\/mp4","m4v":"video\/mp4","webm":"video\/webm","ogv":"video\/ogg","flv":"video\/x-flv"},"contentWidth":1200,"months":[{"year":"2020","month":"6","text":"June 2020"}],"mediaTrash":0}};
+/* ]]> */
+</script>
+<script type="text/javascript">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/media-views.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/media-editor.min.js"></script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-includes/js/media-audiovideo.min.js"></script>
+<script type="text/javascript" data-namespace="paypal_sdk" src="https://www.paypal.com/sdk/js?client-id=AQbghYd-7mRPyimEriYScIgTnYUsLnr5wVnPnmfPaSzwKrUe3qNzfEc5hXr9Ucf_JG_HFAZpJMJYXMuk&intent=capture&locale=en_US&components=buttons,funding-eligibility&commit=false&currency=INR"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var wc_ppec_context = {"use_checkout_js":"","environment":"production","locale":"en_US","page":null,"button_color":"gold","button_shape":"rect","button_label":"paypal","start_checkout_nonce":"265c08c1d1","start_checkout_url":"\/alphabazar\/alphabazar\/?wc-ajax=wc_ppec_start_checkout","return_url":"https:\/\/shaswat22.github.io\/alphabazar\/checkout\/","cancel_url":"https:\/\/shaswat22.github.io\/alphabazar\/cart\/","generic_error_msg":"An error occurred while processing your PayPal payment. Please contact the store owner for assistance.","mini_cart_button_layout":"vertical","mini_cart_button_size":"responsive","mini_cart_button_label":"paypal","mini_cart_disallowed_methods":["CARD","CREDIT"]};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://shaswat22.github.io/alphabazar/wp-content/plugins/woocommerce-gateway-paypal-express-checkout/assets/js/wc-gateway-ppec-smart-payment-buttons.js"></script>
+</body>
+</html>
