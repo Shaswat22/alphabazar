@@ -1,4 +1,3 @@
-/product-category/men/page/1
 /
 /?elementor_library=about-us-page
 /?elementor_library=contact-page-template
